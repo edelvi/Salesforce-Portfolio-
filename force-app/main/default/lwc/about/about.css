@@ -96,12 +96,13 @@ section {
   .about .content ul strong {
     margin-right: 10px;
   }
-  .about .content ul i {
+  .about .content ul .lightning-icon {
     font-size: 16px;
     margin-right: 5px;
-    color: #0563bb;
     line-height: 0;
+    --sds-c-icon-color-foreground-default: #0563bb;
   }
+
   .about .content p:last-child {
     margin-bottom: 0;
   }
