@@ -86,7 +86,7 @@ section {
     padding-bottom: 10px;
     font-size: 1rem;
   }
-  .resume .resume-item p em {
+  .resume .resume-item p {
     font-size: 1rem;
   }
   .resume .resume-item:last-child {
