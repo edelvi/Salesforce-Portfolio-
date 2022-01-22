@@ -39,7 +39,6 @@
     transition: 0.3s;
   }
   .footer .social-links .social-links-icon img:hover {
-    background: #6e9cc7;
     color: #fff;
     text-decoration: none;
   }
