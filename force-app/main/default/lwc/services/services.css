@@ -60,16 +60,19 @@ section {
     margin: 0 auto;
     width: 100px;
     height: 100px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     transition: ease-in-out 0.3s;
     position: relative;
   }
-  .services .icon-box .icon i {
-    font-size: 36px;
-    transition: 0.5s;
-    position: relative;
+  .services .icon-box .icon .icons-srv img {
+    font-size: 60px;
+    max-width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
   }
   .services .icon-box .icon svg {
     position: absolute;
@@ -98,59 +101,71 @@ section {
     border-color: #fff;
     box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
   }
-  .services .iconbox-blue img {
+  .services .iconbox-blue .icons-srv img{
     color: #47aeff;
+    filter: invert(55%) sepia(60%) saturate(1045%) hue-rotate(183deg) brightness(101%) contrast(106%);
   }
-  .services .iconbox-blue:hover .icon img {
+  .services .iconbox-blue:hover .icon .icons-srv img {
     color: #fff;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(286deg) brightness(103%) contrast(103%);
   }
   .services .iconbox-blue:hover .icon path {
-    fill: #47aeff;
+    fill: #47aeff !important;
   }
-  .services .iconbox-orange i {
+  .services .iconbox-orange .icons-srv img {
     color: #ffa76e;
+    filter: invert(71%) sepia(24%) saturate(969%) hue-rotate(333deg) brightness(99%) contrast(105%);
   }
-  .services .iconbox-orange:hover .icon i {
+  .services .iconbox-orange:hover .icon .icons-srv img {
     color: #fff;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(286deg) brightness(103%) contrast(103%);
   }
   .services .iconbox-orange:hover .icon path {
-    fill: #ffa76e;
+    fill: #ffa76e !important;
   }
-  .services .iconbox-pink i {
+  .services .iconbox-pink .icons-srv img {
     color: #e80368;
+    filter: invert(13%) sepia(96%) saturate(5740%) hue-rotate(327deg) brightness(91%) contrast(100%);
   }
-  .services .iconbox-pink:hover .icon i {
+  .services .iconbox-pink:hover .icon .icons-srv img {
     color: #fff;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(286deg) brightness(103%) contrast(103%);
   }
   .services .iconbox-pink:hover .icon path {
-    fill: #e80368;
+    fill: #e80368 !important;
   }
-  .services .iconbox-yellow i {
+  .services .iconbox-yellow .icons-srv img {
     color: #ffbb2c;
+    filter: invert(79%) sepia(49%) saturate(975%) hue-rotate(334deg) brightness(103%) contrast(101%);
   }
-  .services .iconbox-yellow:hover .icon i {
+  .services .iconbox-yellow:hover .icon .icons-srv img {
     color: #fff;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(286deg) brightness(103%) contrast(103%);
   }
   .services .iconbox-yellow:hover .icon path {
-    fill: #ffbb2c;
+    fill: #ffbb2c !important;
   }
-  .services .iconbox-red i {
+  .services .iconbox-red .icons-srv img {
     color: #ff5828;
+    filter: invert(49%) sepia(95%) saturate(3646%) hue-rotate(345deg) brightness(103%) contrast(101%);
   }
-  .services .iconbox-red:hover .icon i {
+  .services .iconbox-red:hover .icon .icons-srv img {
     color: #fff;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(286deg) brightness(103%) contrast(103%);
   }
   .services .iconbox-red:hover .icon path {
-    fill: #ff5828;
+    fill: #ff5828 !important;
   }
-  .services .iconbox-teal i {
+  .services .iconbox-teal .icons-srv img {
     color: #11dbcf;
+    filter: invert(70%) sepia(62%) saturate(1698%) hue-rotate(123deg) brightness(99%) contrast(87%);
   }
-  .services .iconbox-teal:hover .icon i {
+  .services .iconbox-teal:hover .icon .icons-srv img {
     color: #fff;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(286deg) brightness(103%) contrast(103%);
   }
   .services .iconbox-teal:hover .icon path {
-    fill: #11dbcf;
+    fill: #11dbcf !important;
   }  
 
 
