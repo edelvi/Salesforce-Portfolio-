@@ -72,7 +72,7 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -25px 0 0 -25px;
+    margin: -25px 0 0 -20px;
   }
   .services .icon-box .icon svg {
     position: absolute;

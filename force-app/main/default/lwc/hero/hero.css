@@ -28,32 +28,39 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   line-height: 24px;
   font-family: "Poppins", sans-serif;
-  --sds-c-button-text-color: black;
+  --sds-c-button-text-color: white;
 
-  --sds-c-button-neutral-color-background: white;
-  --sds-c-button-neutral-color-border: black;
+  --sds-c-button-neutral-color-background: #0563bb;
+  --sds-c-button-neutral-color-border: #0563bb;
 }
 .hero .button-cv:hover, .hero .button-cv:active, .hero .button-cv:focus{
   /*hover*/
-  --sds-c-button-neutral-color-background-hover: black;
-  --sds-c-button-neutral-color-border-hover: black;
+  --sds-c-button-neutral-color-background-hover: #067ded;
+  --sds-c-button-neutral-color-border-hover: #067ded;
   --sds-c-button-text-color-hover: white;
   /*active*/
-  --sds-c-button-neutral-color-background-active: black;
-  --sds-c-button-neutral-color-border-active: black;
+  --sds-c-button-neutral-color-background-active: #067ded;
+  --sds-c-button-neutral-color-border-active: #067ded;
   --sds-c-button-text-color-active: white;
   /*focus*/
-  --sds-c-button-neutral-color-background-focus: black;
-  --sds-c-button-neutral-color-border-focus: black;
+  --sds-c-button-neutral-color-background-focus: #067ded !important;
+  --sds-c-button-neutral-color-border-focus: #067ded !important;
   --sds-c-button-shadow-focus: rgb(88, 216, 163);
   --sds-c-button-text-color-focus: white;
-  --lwc-colorBackgroundButtonDefaultHover: black;
+  --lwc-colorBackgroundButtonDefaultHover: #067ded;
+
+  --sds-c-button-neutral-color-background-hover: #067ded !important;
+  
 }
 
 .hero {
   width: 100%;
   height: 100vh;
-  background: url('/sfsites/c/resource/Img/Img/hero.jpg') top right no-repeat;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.75)
+   ),  
+   url('/sfsites/c/resource/BG/BG/7.jpg');
   background-size: cover;
   position: relative;
   align-content: center;
@@ -64,23 +71,25 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 160px;
   }
 }
+
+
 .hero:before {
-  background: rgba(255, 255, 255, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
 }
-.hero .container h1 {
+
+.hero h1 {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #fff; 
 }
 .hero .container p {
-  color: #45505b;
+  color: #fff;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -95,15 +104,29 @@ h1, h2, h3, h4, h5, h6 {
 .hero .social-links .social-links-icon img{
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(286deg) brightness(103%) contrast(103%);
   line-height: 1;
   margin-right: 20px;
-  transition: 0.3s;
-  width:32px;
+  width:24px;
 }
-.hero .social-links .social-links-icon:hover {
+.hero .social-links .social-links-icon1 img{
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  margin-right: 20px;
+  width:24px;
+}
+
+.hero .social-links .social-links-icon img:hover {
   color: #0563bb;
+  filter: invert(22%) sepia(96%) saturate(1706%) hue-rotate(194deg) brightness(99%) contrast(6%);
 }
+
+.hero .social-links .social-links-icon1 img:hover {
+  color: #0563bb;
+  filter: invert(22%) sepia(96%) saturate(1706%) hue-rotate(194deg) brightness(99%) contrast(6%);
+}
+
 @media (max-width: 992px) {
   .hero {
     text-align: center;
