@@ -119,3 +119,14 @@ section {
     max-width: 100%;
     height: auto;
   }
+
+  @media (max-width: 692px) {
+    .container {
+      width: 100%;
+      padding-left: var(--bs-gutter-x, 1.75rem);
+      padding-right: var(--bs-gutter-x, 1.75rem);
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  }
