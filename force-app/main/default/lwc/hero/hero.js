@@ -1,18 +1,66 @@
 import { LightningElement } from 'lwc';
+import { NavigationMixin } from 'lightning/navigation';
 
-export default class Hero extends LightningElement {
 
-    if (typed) {
-        let typed_strings = typed.getAttribute('data-typed-items')
-        typed_strings = typed_strings.split(',')
-        new Typed('.typed', {
-        strings: typed_strings,
-        loop: true,
-        typeSpeed: 100,
-        backSpeed: 50,
-        backDelay: 2000
-        });
+export default class Hero extends NavigationMixin(LightningElement) {
+    
+    navigateToLinkedin() {
+        // Navigate to a URL
+        this[NavigationMixin.Navigate]({
+            type: 'standard__webPage',
+            attributes: {
+                url: 'https://www.linkedin.com/in/etreto'
+            }
+        },
+        true // Replaces the current page in your browser history with the URL
+      );
     }
-  
-}
 
+    navigateToTwitter() {
+        // Navigate to a URL
+        this[NavigationMixin.Navigate]({
+            type: 'standard__webPage',
+            attributes: {
+                url: 'https://twitter.com/edelvitretodiaz'
+            }
+        },
+        true // Replaces the current page in your browser history with the URL
+      );
+    }
+
+    navigateToGithub() {
+        // Navigate to a URL
+        this[NavigationMixin.Navigate]({
+            type: 'standard__webPage',
+            attributes: {
+                url: 'https://github.com/edelvi'
+            }
+        },
+        true // Replaces the current page in your browser history with the URL
+      );
+    }
+
+    navigateToTrailhead() {
+        // Navigate to a URL
+        this[NavigationMixin.Navigate]({
+            type: 'standard__webPage',
+            attributes: {
+                url: 'https://trailblazer.me/id/etreto'
+            }
+        },
+        true // Replaces the current page in your browser history with the URL
+      );
+    }
+
+    navigateToPdf() {
+        // Navigate to a URL
+        this[NavigationMixin.Navigate]({
+            type: 'standard__webPage',
+            attributes: {
+                url: 'https://drive.google.com/file/d/1WtW6GzLM7SmCF9JRLBew0Oa4h_8XubF3/view?usp=sharing'
+            }
+        },
+        true // Replaces the current page in your browser history with the URL
+      );
+    }
+}

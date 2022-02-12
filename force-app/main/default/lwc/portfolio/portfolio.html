@@ -13,7 +13,7 @@
             <div class="slds-col slds-size_12-of-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul class="portfolio-flters">
                 <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
+                <li data-filter={filterApp}>App</li>
                 <li data-filter=".filter-card">Card</li>
                 <li data-filter=".filter-web">Web</li>
             </ul>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="slds-grid slds-wrap portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            
+
             <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_4-of-12 portfolio-item filter-app">
                 <div class="portfolio-wrap">
                     <img src="/sfsites/c/resource/Portfolio/Portfolio/portfolio-7.jpg" class="img-fluid" alt="">
@@ -29,8 +29,8 @@
                     <h4>App 1</h4>
                     <p>App</p>
                     <div class="portfolio-links">
-                        <a href="/sfsites/c/resource/Portfolio/Portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        <lightning-button label="View code" class="slds-var-m-around_medium" onclick={navigateToProject1} > </lightning-button>
+                        <a href="" class="portfolio-details-lightbox" onclick={navigateToPortfolioDetails} data-glightbox="type: external" title="Portfolio Details"><lightning-icon icon-name="utility:link" size="small" class="lightning-icon"></lightning-icon></a>
                     </div>
                     </div>
                 </div>

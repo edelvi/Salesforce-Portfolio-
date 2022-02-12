@@ -3,17 +3,16 @@
   <section class="hero">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Edelvi Treto</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Web Developer</span></p>
+      <p>I'm Full Stack Developer Web<span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">{bla}</span></p>
       <div class="social-links">
-        <a href="#" class="social-links-icon"><img src="/sfsites/c/resource/SocialMediaIcons/SocialMediaIcons/linkedin-i.svg" /></a>
-        <a href="#" class="social-links-icon"><img src="/sfsites/c/resource/SocialMediaIcons/SocialMediaIcons/twitter-i.svg" /></a>
-        <a href="#" class="social-links-icon"><img src="/sfsites/c/resource/SocialMediaIcons/SocialMediaIcons/github-o.svg" /></a>   
-        <a href="#" class="social-links-icon1"><img src="/sfsites/c/resource/SocialMediaIcons/SocialMediaIcons/trailhead_o.svg" /></a>   
+        <a class="social-links-icon"><img onclick={navigateToLinkedin} src="/sfsites/c/resource/SocialMediaIcons/SocialMediaIcons/linkedin-i.svg" /></a>
+        <a href="#" class="social-links-icon"><img onclick={navigateToTwitter} src="/sfsites/c/resource/SocialMediaIcons/SocialMediaIcons/twitter-i.svg" /></a>
+        <a href="#" class="social-links-icon"><img onclick={navigateToGithub} src="/sfsites/c/resource/SocialMediaIcons/SocialMediaIcons/github-o.svg" /></a>   
+        <a href="#" class="social-links-icon1"><img onclick={navigateToTrailhead} src="/sfsites/c/resource/SocialMediaIcons/SocialMediaIcons/trailhead_o.svg" /></a>   
       </div>
     </div>
   
-    <lightning-button label="Download CV" title="Download action" icon-name="utility:download" class="button-cv slds-is-static"></lightning-button>
-    
+    <lightning-button label="Download CV" title="Download action" onclick={navigateToPdf} icon-name="utility:download" class="button-cv slds-is-static" src="/sfsites/c/resource/CV/CV/cv.pdf"></lightning-button>
   </section>
 
   <!-- End Hero -->
