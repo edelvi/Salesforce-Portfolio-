@@ -57,7 +57,7 @@ export default class Hero extends NavigationMixin(LightningElement) {
         this[NavigationMixin.Navigate]({
             type: 'standard__webPage',
             attributes: {
-                url: 'https://drive.google.com/file/d/1WtW6GzLM7SmCF9JRLBew0Oa4h_8XubF3/view?usp=sharing'
+                url: 'https://drive.google.com/file/d/1z5-dHQSTvSkqJVLfPgD_svRKEakK5c5x/view?usp=sharing'
             }
         },
         true // Replaces the current page in your browser history with the URL
